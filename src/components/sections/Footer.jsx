@@ -1,6 +1,6 @@
 import { FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { TbDog } from 'react-icons/tb'
-import { DogIcon } from './DogIcon';
+import { DogIcon } from '../DogIcon';
 
 export function Footer() {
     return (

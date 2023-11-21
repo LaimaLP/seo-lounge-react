@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { DemoPage } from "./components/pages/Demo";
-import { HomePage } from "./components/pages/Home";
-
+import { ServicesPage } from './components/pages/ServicesPage';
+import { HomePage } from "./components/pages/HomePage";
+import { NoPage } from './components/pages/NoPage';
 
 
 
@@ -12,7 +12,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<HomePage />} />
-          <Route path="/demo" element={<DemoPage />} />
+          <Route index path="/services" element={<ServicesPage />} />
+          <Route index path="*" element={<NoPage />} />
+
+       
+
           {/* <Route path='/register' element={<RegisterPage />} /> */}
           {/* <Route path='*' element={<NoPage />} /> */}
         </Routes>
