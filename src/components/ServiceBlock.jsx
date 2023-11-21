@@ -14,7 +14,6 @@ const {icon, title, description, price, link} = data;
           <p>{description}</p>
           <a href={link} className="icon-link">
             Read more <FaAngleRight />
-            <svg className="bi"></svg>
           </a>
         </div>
     )

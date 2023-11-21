@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<HomePage />} />
-          <Route index path="/services" element={<ServicesPage />} />
-          <Route index path="*" element={<NoPage />} />
+          <Route  path="/services" element={<ServicesPage />} />
+          <Route path="*" element={<NoPage />} />
 
        
 

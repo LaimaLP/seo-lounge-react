@@ -1,27 +1,23 @@
-import { Header } from '../sections/Header';
 import { Footer } from "../sections/Footer";
-import ufo from "../../assets/ufoBeFono.png"
-
-
+import { Header } from "../sections/Header";
+import ufoImg from '../assets/ufoBeFono.png';
 
 export function NoPage() {
     return (
         <>
             <Header />
             <main>
-               <section className = "container" >
-                <div>
-                    <div>
-                        <h1> 404 </h1>
-                            <h2>  Page not found</h2>
-                       
+                <section className="container">
+                    <div className="row">
+                        <div className="col-12 col-sm-6 col-md-4 offset-lg-2 col-xl-3 offset-xl-3">
+                            <h1>404</h1>
+                            <h2>Page not found :( </h2>
+                        </div>
+                        <div className="col-12 col-sm-6 col-md-8 col-lg-4 col-xl-3">
+                            <img src={ufoImg} alt="UFO" />
+                        </div>
                     </div>
-                    <div>
-                        <img src={ufo} style="width: 200px" alt="UFO"/>
-                        
-                    </div>
-                </div>
-               </section>
+                </section>
             </main>
             <Footer />
         </>

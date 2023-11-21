@@ -58,7 +58,7 @@ export function Services({ limit, sortBy }) {
 
     const trueLimit = servicesData.length > limit ? limit : servicesData.length;
 
-    const sortByTitleAZ = (a, b) => a.title < b.title ? -1 : a.title === b.title ? 0 : 1;
+    const sortByTitleAZ = (a, b) => a.title < b.title ? -1 : a.title === b.title ? 0 : 1; //-N 0 N
     const sortByTitleZA = (a, b) => a.title < b.title ? 1 : a.title === b.title ? 0 : -1;
     const sortByPriceAZ = (a, b) => a.price - b.price;
     const sortByPriceZA = (a, b) => b.price - a.price;
@@ -81,6 +81,7 @@ export function Services({ limit, sortBy }) {
                         .map(
                             service => <ServiceBlock key={service.id} data={service} />
                         )
+
                 }
             </div>
         </div>
