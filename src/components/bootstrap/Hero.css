@@ -1,0 +1,60 @@
+.HeroContainer{
+    height: 100vh;
+    background-color: rgb(191, 224, 224);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.buttonContainer{
+    display: flex;
+    gap: 15px
+}
+.buttonContainer button{
+    padding:15px 50px;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.SectionOne{
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(174, 215, 202);
+
+   
+}
+.SectionTwo{
+    height: 100vh;
+    background-color: rgb(175, 175, 235);
+    display: flex;
+    align-items: center;
+}
+.SectionThree{
+    text-align: center;
+    background-color:antiquewhite;
+    align-items: center;
+    height: 100vh;
+}
+
+.SectionFour{
+    height: 100vh;
+    background-color:rgb(240, 194, 134);
+    align-items: center;
+    display: flex;
+
+}
+.dataContainer{
+    display: flex;
+    flex-direction: row;
+    gap:50px
+}
+
+.SectionFive{
+    height: 100vh;
+    background-color:rgb(199, 251, 191);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
