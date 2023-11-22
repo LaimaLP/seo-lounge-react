@@ -1,6 +1,4 @@
-import {Link} from 'react-router-dom';
-
-
+import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
@@ -16,15 +14,15 @@ export function Header() {
                 </div>
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><Link to="/" className="nav-link px-2 link-primary">Home</Link></li>
+                    <li><Link to="/" className="nav-link px-2 link-danger">Home</Link></li>
                     <li><Link to="/services" className="nav-link px-2">Services</Link></li>
                 </ul>
 
                 <div className="col-md-3 text-end">
-                    <button type="button" className="btn btn-outline-primary me-2">Login</button>
-                    <button type="button" className="btn btn-primary">Register</button>
+                    <Link to="/login" className="btn btn-outline-primary me-2">Login</Link>
+                    <Link to="/register" className="btn btn-primary">Register</Link>
                 </div>
             </header>
         </div>
-    )
+    );
 }
