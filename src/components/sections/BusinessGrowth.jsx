@@ -1,4 +1,4 @@
-import img from '../assets/img/Home-11-Service-Section-Maximize-Image.png';
+import img from '../assets/Home-11-Service-Section-Maximize-Image.png';
 
 export function BusinessGrowth() {
     return (
